@@ -523,9 +523,8 @@ function addDownhillToEnd(num) {
 
 function resetRoad() {
     segments = [];
-    
-    addRoad(1080,20,60);
-    /*addStraight(ROAD.LENGTH.LONG);
+
+    addStraight(ROAD.LENGTH.LONG);
     addSCurves();
     addLowRollingHills();
     addSCurves();
@@ -544,7 +543,7 @@ function resetRoad() {
     addStraight();
     addSCurves();
     addDownhillToEnd();
-*/
+
     resetSprites();
 
     segments[findSegment(playerZ).index + 2].color = COLORS.START;
