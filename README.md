@@ -1,5 +1,5 @@
 # racermaster
-Pseudo3D racer in javascript based on http://www.extentofthejam.com/pseudo/
+Pseudo3D racer in javascript based on http://www.extentofthejam.com/pseudo/ OutRun clone
 
 With basic networking multiplayer with websockets 
 
