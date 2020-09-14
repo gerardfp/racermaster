@@ -7,7 +7,7 @@ var clients = [ ];
 var server = http.createServer(function(request, response) {
     if(request.url == "/"){
         response.writeHead(200, {'Content-Type': 'text/html'});
-        response.end(fs.readFileSync('racermaster.html'));
+        response.end(fs.readFileSync('index.html'));
     }else if(request.url == "/sprites.png"){
         response.writeHead(200, {'Content-Type': 'image/png'});
         response.end(fs.readFileSync('sprites.png'));
