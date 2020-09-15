@@ -632,12 +632,12 @@ function addEventListeners() {
 // THE MAIN GAME LOOP
 //=========================================================================
 
-window.WebSocket = window.WebSocket || window.MozWebSocket;
-var connection = new WebSocket('ws://' + location.host);
-connection.onmessage = function (message) {
-    var json = JSON.parse(message.data);
-    if(json.id != playerid) updateCar(json.id, json.x, json.z, json.name);
-};
+// window.WebSocket = window.WebSocket || window.MozWebSocket;
+// var connection = new WebSocket('ws://' + location.host);
+// connection.onmessage = function (message) {
+//     var json = JSON.parse(message.data);
+//     if(json.id != playerid) updateCar(json.id, json.x, json.z, json.name);
+// };
 
 
 addEventListeners();            
@@ -655,7 +655,7 @@ window.setInterval(function(){
   while (gdt > step) {
     gdt = gdt - step;
     update(step);
-    connection.send(JSON.stringify({id: playerid, x: playerX, z: position+playerZ, name: playername }));
+//     connection.send(JSON.stringify({id: playerid, x: playerX, z: position+playerZ, name: playername }));
   }
   render();
   last = now;
