@@ -525,6 +525,7 @@ function addDownhillToEnd(num) {
 function resetRoad() {
     segments = [];
 
+    addCurve(ROAD.LENGTH.LONG, ROAD.CURVE.HARD, ROAD.HILL.HIGH);
     addStraight(ROAD.LENGTH.LONG);
     addSCurves();
     addLowRollingHills();
